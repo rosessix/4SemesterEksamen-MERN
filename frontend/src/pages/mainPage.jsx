@@ -10,10 +10,11 @@ const MainPage = () => {
             return
         }
 
-        if (uid || uid != '') {
-            
-        }
     }, [])
+
+    return (
+        <p>Wowzers! Du er logget ind!</p>
+    )
 }
 
 export default MainPage
