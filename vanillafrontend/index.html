@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Frontend</title>
+</head>
+<body>
+    <div id="products"></div>
+
+    <script>
+        let products = ['volvo', 'bmw', 'audi']
+
+        const generateProducts = () => {
+            let productsEle = document.getElementById('products')
+            for (let i = 0; i < products.length; i++) {
+                productsEle.innerHTML += `${products[i]} `
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            generateProducts()
+        })
+    </script>
+</body>
+</html>
